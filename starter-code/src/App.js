@@ -5,6 +5,7 @@ import Random from "./Random.js"
 import BoxColor from "./BoxColor.js"
 import CreditCard from "./CreditCard.js"
 import Rating from "./Rating.js"
+import DriverCard from "./DriverCard.js"
 
 class App extends Component {
   render() {
@@ -32,8 +33,8 @@ class App extends Component {
 
 
 
-        <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+  <h1>Greetings</h1>
+  {/* TODO: Use the Greetings component */}
     <Greetings lang="de" firstName="Ludwig"></Greetings>
     <Greetings lang="fr" firstName="François"></Greetings>
 
@@ -78,8 +79,25 @@ class App extends Component {
       </div>
 
     <h1>Rating</h1>
-    <Rating oneStar={0}/>
-    <Rating oneStar={1.49}/>
+    <Rating/>
+
+    <h2>Driver Card</h2>
+    <DriverCard 
+      name="Travis Kalanick"
+      img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+      car={{
+        model: "Toyota Corolla Altis",
+        licensePlate: "CO42DE"
+      }} />
+    <DriverCard 
+      name="Dara Khosrowshahi"
+      img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+      car={{
+        model: "Audi A3",
+        licensePlate: "BE33ER"
+      }} />
+   
+
 
       </div>
     );

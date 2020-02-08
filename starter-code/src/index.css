@@ -18,3 +18,9 @@ code {
   justify-content: space-evenly;
   padding: 20px;  
 }
+
+.img-driver {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
